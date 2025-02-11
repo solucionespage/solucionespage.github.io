@@ -126,9 +126,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 40px;
 
-    background-image: url(../Media/IMG/MOVILE/Header/header.jpg);
+    background-image: linear-gradient(#00000027, #000000c9),url(../Media/IMG/MOVILE/Header/header.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,13 +172,15 @@ img {
     margin-top: auto;
 }
 
+/* Whatsapp */
+
 .cont__whatsapp {
     display: none;
     justify-content: end;
     width: 100%;
     position: fixed;
     z-index: 90;
-    top: 550px;
+    top: 90vh;
     left: -10px;
 }
 
@@ -404,6 +406,9 @@ img {
     align-items: center;
     color: #f0f0f0;
     gap: 10px;
+    background-color: #0000004b;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 .servicios__data--cont > img {
