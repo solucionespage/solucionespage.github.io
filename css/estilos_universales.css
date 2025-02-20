@@ -230,7 +230,7 @@ img {
 /*---*/
 
 .imagen_de_fondo {
-    background-image: linear-gradient(#1c244667, #000000d5),url(../Media/IMG/MOVILE/fondo_v.jpg);
+    background-image: linear-gradient(#1c244667, #000000d5),url(../media/img/movile/fondo_v.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
