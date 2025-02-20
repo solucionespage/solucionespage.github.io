@@ -65,7 +65,7 @@ img {
 
     padding: 10px;
 
-    background-image: linear-gradient(rgb(39, 56, 105), rgba(56, 102, 167, 0.466)),url(../Media/IMG/movile/header.jpg);
+    background-image: linear-gradient(rgb(39, 56, 105), rgba(56, 102, 167, 0.466)),url(../media/img/movile/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -168,7 +168,7 @@ img {
     align-items: center;
     padding: 20px 20px 40px;
 
-    background-image: linear-gradient(#30434718, #200000bb),url(../Media/IMG/movile/header.jpg);
+    background-image: linear-gradient(#30434718, #200000bb),url(../media/img/movile/header.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,7 +243,7 @@ img {
 
 @media screen and (min-width: 600px) {
     .imagen_de_fondo {
-        background-image: linear-gradient(#1c244667, #000000d5),url(../Media/IMG/full/FormatFactoryfondo_h.jpg);
+        background-image: linear-gradient(#1c244667, #000000d5),url(../media/img/full/FormatFactoryfondo_h.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     
