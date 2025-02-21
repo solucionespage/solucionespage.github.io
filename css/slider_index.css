@@ -1,0 +1,86 @@
+
+.servicios__slider {
+    padding: 10px;
+}
+
+.slider__container {
+    padding: 10px;
+}
+
+.slider__warp {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__data {
+    position: relative;
+    width: 400%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* --- --- */
+
+.slider__cont {
+    width: 100%;
+    height: 300px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+} 
+
+.slider__data__info {
+    width: 100%;
+    height: 100%;
+
+    /* Propiedades del Background */
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 10px;
+}
+
+.slider__cont__title {
+    padding: 10px;
+    color: #fff;
+}
+
+/* --- --- --- --- */
+
+/* Imagenes del Slider Cambiar segun sea nesesario por clase. */
+
+
+
+.hijo_gps {
+    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/gps.jpg);
+}
+
+.hijo_polarizado {
+    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/Polarisado.jpg);
+}
+
+.hijo_calefaccion {
+    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/calefaccion.jpg);
+}
+
+.hijo_video {
+    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/video.jpg);
+}
+
+@media screen and (min-width: 700px) {
+    .slider__warp {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .slider__cont {
+        height: 350px;
+    } 
+
+    .slider__title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

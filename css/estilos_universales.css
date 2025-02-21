@@ -1,0 +1,251 @@
+/* Estilos Universales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del HTML y Body */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url(tipografia/Ubuntu-Bold.ttf);
+}
+
+body {
+    font-family: ubuntu, sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos Generales */
+
+ol, ul { list-style: none;}
+
+li { user-select: none;}
+
+a { text-decoration: none; user-select: none;}
+
+img { max-width: 100%;}
+
+h1 { font-size: 3rem; user-select: none;}
+
+/* --- Imagen de Fondo --- s*/
+
+.imagen_de_fondo {
+    background-image: linear-gradient(#1c244667, #000000d5),url(../media/img/movile/fondo_v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+/* -------------------------------- */
+/* --- | Contenedor Principal | --- */
+/* -------------------------------- */
+
+.contenedor__principal {
+    width: 100%;
+    min-height: 150vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------ */
+/* --- | Header | --- */
+/* ------------------ */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    border-bottom: 3px solid #c9c5d3;
+    position: relative;
+    transition: top 0.3s;
+}
+
+.sticky {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.header__container {
+    padding: 10px;
+
+    background-image: linear-gradient(rgb(39, 56, 105), rgba(56, 102, 167, 0.466)),url(../media/img/movile/header/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "header__logo header__boton_menu" 
+    "header__nav header__nav";
+}
+
+.header__logo {
+    grid-area: header__logo;
+}
+
+.header__logo > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+/* NAV */
+
+.header__nav {
+    grid-area: header__nav;
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item > a{
+    color: rgb(190, 221, 252);
+    font-size: 1.3rem;
+    padding: 0 2px;
+    border-radius: 12px;
+}
+
+.header__item > a:hover{
+    color: rgb(132, 179, 226);
+}
+
+
+.header__item_g {
+    display: none;
+}
+
+/* MENU */
+
+.label_menu_desplegable > img {
+    width: 45px;
+    height: 45px;
+}
+
+.header__boton_menu {
+    grid-area: header__boton_menu;
+    display: flex;
+    justify-content: end;
+}
+
+#menu_desplegable {
+    display: none;
+}
+
+/* --- Header Desplegable --- */
+.header__desplegable {
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.header__desplegable__container {
+    width: 70%;
+    max-width: 600px;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 40px;
+
+    background-image: linear-gradient(#30434718, #200000bb),url(../media/img/movile/header/header.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-right: 4px solid #151e53;
+}
+
+.header__desplegable__cerrar {
+    background-color: #00000057;
+    backdrop-filter: blur(1px);
+    flex: 1;
+    height: 100vh;
+}
+
+.header__logo__des > img {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+}
+
+.header__list__des {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__item__des > a{
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: #00091396;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+.header_foot {
+    display: flex;
+    margin-top: auto;
+    text-align: center;
+    color: #dddddd;
+}
+
+/* ------------------ */
+/* --- | Footer | --- */
+/* ------------------ */
+
+.footer {
+    margin-top: auto;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    background-color: #222;
+}
+
+.footer > p {
+    padding: 20px;
+}
+
+@media screen and (min-width: 750px) {
+    .header__container {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+        "header__logo header__nav header__boton_menu" 
+    }
+
+    .header__item_g {
+        display: flex;
+    }
+
+    .header__item_g_o {
+        display: none;
+    }
+}

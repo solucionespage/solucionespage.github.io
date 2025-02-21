@@ -1,0 +1,208 @@
+/* Whatsapp */
+
+.cont__whatsapp {
+    display: none;
+    justify-content: end;
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    top: 85vh;
+    left: -10px;
+    overflow: hidden;
+}
+
+.whatsapp_click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.whatsapp_click:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#boton__ir_a_whatsapp {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 220px;
+    background: linear-gradient(rgb(66, 212, 43), rgb(27, 129, 11));
+    border-radius: 24px;
+    padding: 2px 10px;
+}
+
+#boton__ir_a_whatsapp > button {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+#boton__ir_a_whatsapp > img {
+    width: 15%;
+}
+
+/* --- Hero --- */
+.section__hero {
+    background-color: rgba(1, 2, 39, 0.171);
+}
+
+.hero__container {
+    padding: 10px;
+    color: #fff;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero__slogan > h2{
+    font-size: 1.2rem;
+}
+
+.hero__boton {
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.hero__boton > a{
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: rgba(58, 59, 65, 0.384);
+    text-transform: uppercase;
+}
+
+.hero__boton > a:hover{
+    color: #b8b8b8;
+}
+
+/* --- Smoot */
+
+#id_servicios {
+    background-color: rgba(1, 2, 39, 0.171);
+}
+
+#id_servicios__final {
+    position: relative;
+    transform: scale(-1);
+    direction: rtl;
+    backdrop-filter: blur(3px);
+}
+
+/* --- Servicios --- */
+
+.servicios__title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 0 12px;
+
+}
+
+.servicios__container {
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(rgb(9, 85, 151), rgb(46, 113, 172));
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Secciones */
+
+.servicios__secciones {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.cont_secciones_servicios2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.serv_outline {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.serv_outline a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.serv_logos {
+    display: flex;
+    flex: 2;
+}
+
+.serv_logos > img {
+    border-radius: 50%;
+    max-width: 140px;
+}
+
+.serv__soluciones__title, .serv__agrocent__title, .serv__digital__title {
+    flex: 2;
+    font-size: 1.2rem;
+}
+
+.servicios__soluciones {
+    background: linear-gradient(to right, rgb(35, 110, 190), rgb(127, 160, 194));
+}
+
+.servicios__agrocent {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(12, 12, 12));
+}
+
+.servicios__digital {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(22, 22, 22));
+}
+
+@media screen and (min-width: 950px) {
+    .servicios__secciones {
+        gap: 10px;
+        flex-direction: row;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .cont_secciones_servicios2 {
+        flex: 1;
+    }
+    
+    .serv_logos {
+        display: flex;
+        flex: 2;
+    }
+
+    .serv__soluciones__title, .serv__agrocent__title, .serv__digital__title {
+        flex: 2;
+        font-size: 1.2rem;
+    }
+}
+
+/* --- Slider en Otro Documento --- */
+

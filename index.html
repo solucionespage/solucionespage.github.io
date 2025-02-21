@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Soluciones, Marketig Digital">
     <meta name="author" content="Manuel Del Rio Socorro">
-    <meta name="keywords" content="soluciones, agrocenter">
+    <link rel="shortcut icon" href="media/img/logo.jpg" type="image/x-icon">
     <title>Soluciones</title>
     <link rel="stylesheet" href="css/estilos_universales.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slider_index.css">
 </head>
 <body>
     <!-- Contenedor Principal -->
-    <div class="contenedor_principal">
-        <!-- Imagen de Fondo -->
+    <div class="contenedor__principal">
+        <!-- Imagen del fondo -->
         <div class="imagen_de_fondo"></div>
         <!-- Ventana de Whatsapp-->
         <div id="boton__whatsapp" class="cont__whatsapp">
             <a id="boton__ir_a_whatsapp" href="https://wa.me/+59892166630" target="_blank">
                 <button>Contactar via WhatsApp</button>
                 <img src="media/img/whatsapp.png" alt="whatsapp">
+                <div class="whatsapp_click"></div>
             </a>
         </div>
         <!-- Header -->
@@ -26,13 +29,13 @@
             <div class="header__desplegable">
                 <div class="header__desplegable__container">
                     <div class="header__logo__des">
-                        <img src="media/img/movile/logo.jpg" alt="Logo de Soluciones SA">
+                        <img src="media/img/movile/header/logo.jpg" alt="Logo de Soluciones SA">
                     </div>
                     <nav class="header__nav__des">
                         <ul class="header__list__des">
                             <li class="header__item__des"><a href="#">Inicio</a></li>
-                            <li class="header__item__des"><a href="#">Servicios</a></li>
-                            <li class="header__item__des"><a href="#">Electronica</a></li>
+                            <li class="header__item__des"><a href="#id_seccion_servicios">Servicios</a></li>
+                            <li class="header__item__des"><a href="html/electronica.html">Electrónica</a></li>
                             <li class="header__item__des"><a href="#">Agrocenter</a></li>
                             <li class="header__item__des"><a href="#">Dijimark</a></li>
                             <li class="header__item__des"><a href="#">Contacto</a></li>
@@ -45,30 +48,30 @@
                 </div>
                 <div onclick="boton_menu()" class="header__desplegable__cerrar"></div>
             </div>
-
             <div class="header__container">
                 <!-- Logo -->
                 <div class="header__logo">
-                    <img src="media/img/movile/logo.jpg" alt="Logo de Soluciones SA">
+                    <img src="media/img/logo.jpg" alt="Logo de Soluciones">
                 </div>
-                <!-- Menu Amburgesa -->
-                <label onclick="boton_menu()" class="label_menu_desplegable-1" for="menu_desplegable">
-                    <img src="media/img/movile/menu-button_icon-icons.com_72989.svg" alt="Boton Menu">
-                </label>
-                <input type="checkbox" name="boton" id="menu_desplegable">
                 <!-- Nav -->
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item"><a href="#">Inicio</a></li>
-                        <li class="header__item"><a href="#">Servicios</a></li>
+                        <li class="header__item header__item_g_o"><a href="#id_seccion_servicios">Servicios</a></li>
+                        <li class="header__item header__item_g"><a href="html/electronica.html">Electrónica</a></li>
+                        <li class="header__item header__item_g"><a href="#">Agrocenter</a></li>
+                        <li class="header__item header__item_g"><a href="#">Dijimark</a></li>
                         <li class="header__item"><a href="#">Contacto</a></li>
                         <li class="header__item"><a href="#">Blog</a></li>
                     </ul>
                 </nav>
-                <!-- --- -->
-                <label onclick="boton_menu()" class="label_menu_desplegable-2" for="menu_desplegable">
-                    <img src="media/img/movile/menu-button_icon-icons.com_72989.svg" alt="Boton Menu">
-                </label>
+                <!-- Boton Menu Desplegable -->
+                <div class="header__boton_menu">
+                    <label onclick="boton_menu()" class="label_menu_desplegable" for="menu_desplegable">
+                        <img src="media/img/movile/header/menu-button_icon-icons.com_72989.svg" alt="Menu Desplegable">
+                    </label>
+                    <input type="checkbox" name="boton" id="menu_desplegable">
+                </div>
             </div>
         </header>
         <!-- Hero -->
@@ -78,169 +81,125 @@
                     <h1>Soluciones</h1>
                 </div>
                 <div class="hero__slogan">
-                    <h2>Al alcance de su mano.</h2>
+
                 </div>
                 <div class="hero__boton">
-                    <a href="#">CONTACTANOS</a>
+                    <a href="#">Contactanos</a>
                 </div>
             </div>
         </section>
         <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
         <div id="id_servicios" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(9, 85, 151);"></path></svg></div>
         <!-- Seccion de Servicios -->
-        <section class="section__servicios">
+        <section id="id_seccion_servicios" class="section__servicios">
             <div class="servicios__container">
                 <div class="servicios__title">
                     <h2>Nuestros Servicios</h2>
                 </div>
-                <section class="servicios__section__digimark">
-                    <div class="digi__img__continer">
-                        <img src="media/img/movile/1000013588.png" alt="">
-                    </div>
-                    <div class="digi__info">
-                        <div class="electronica__title"><h2>Digital Marketig</h2></div>
-                        <div class="electronica__info">
-                            <p>Breve Informacion...</p>
+                <div class="servicios__secciones">
+                    <div class="cont_secciones_servicios2 servicios__soluciones">
+                        <div class="serv_outline"><a href="html/electronica.html"></a></div>
+                        <div class="serv_logos serv_soluciones__logo">
+                            <img src="media/img/movile/servicios/soluciones.jpg" alt="Logo Seccion Soluciones">
+                        </div>
+                        <div class="serv__soluciones__title">
+                            <h2>Electrónica</h2>
+                            <p>Descubrir+</p>
                         </div>
                     </div>
-                </section>
-                <section class="servicios__section__electronica">
-                    <div class="electronica__img__container">
-                        <img src="media/img/movile/1000014019.png" alt="">
-                    </div>
-                    <div class="electro_info">
-                        <div class="electronica__title"><h2>Electronica</h2></div>
-                        <div class="electronica__info">
-                            <p>Breve Informacion...</p>
+                    <div class="cont_secciones_servicios2 servicios__agrocent">
+                        <div class="serv_outline"></div>
+                        <div class="serv_logos serv__agrocent__logo">
+                            <img src="media/img/movile/servicios/agrocent.jpg" alt="Logo Seccion Agrocent">
+                        </div>
+                        <div class="serv__agrocent__title">
+                            <h2>Agrocent</h2>
+                            <p>Descubrir+</p>
                         </div>
                     </div>
-                </section>  
-                <section class="servicios__section__agrocenter">
-                    Agrocentro
-                </section>
-                <h2 id="h2_descrubre">Descubre Mas...</h2>
+                    <div class="cont_secciones_servicios2 servicios__digital">
+                        <div class="serv_outline"><a href="#"></a></div>
+                        <div class="serv_logos serv__digital__logo">
+                            <img src="media/img/movile/servicios/marketig.png" alt="Logo Seccion Marketig Digital">
+                        </div>
+                        <div class="serv__digital__title">
+                            <h2>Marketig Digital</h2>
+                            <p>Descubrir+</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Slider -->
-                <div class="slider">
+                <div class="servicios__slider">
+                    <div class="slider__title">
+                        <h2>Nuevos Servicios a su <span style="color: rgb(18, 18, 133);">Disposición</span>.</h2>
+                    </div>
                     <div class="slider__container">
-                        <div class="slider__cont">
-                            <div class="slider__data__info hijo_gps">
-                                <div class="slider__cont__title">
-                                    <h2>Colocación de GPS.</h2>
+                        <div class="slider__warp">
+                            <div class="slider__data">
+                                <div id="slider_img_1" class="slider__cont">
+                                    <div class="slider__data__info hijo_gps">
+                                        <div class="slider__cont__title">
+                                            <h2>Colocación de GPS.</h2>
+                                        </div>
+                                        <div class="slider__cont__data">
+            
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider__cont__data">
-    
+                                <div id="slider_img_2" class="slider__cont">
+                                    <div class="slider__data__info hijo_polarizado">
+                                        <div class="slider__cont__title">
+                                            <h2>Polarizado de Vidrios</h2>
+                                        </div>
+                                        <div class="slider__cont__data">
+            
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slider__cont">
-                            <div class="slider__data__info hijo_polarizado">
-                                <div class="slider__cont__title">
-                                    <h2>Polarizado de Vidrios</h2>
+                                <div id="slider_img_3" class="slider__cont">
+                                    <div class="slider__data__info hijo_calefaccion">
+                                        <div class="slider__cont__title">
+                                            <h2>Colocación de calefación para los asientos.</h2>
+                                        </div>
+                                        <div class="slider__cont__data">
+            
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider__cont__data">
-    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider__cont">
-                            <div class="slider__data__info hijo_calefaccion">
-                                <div class="slider__cont__title">
-                                    <h2>Colocación de calefación para los asientos.</h2>
-                                </div>
-                                <div class="slider__cont__data">
-    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider__cont">
-                            <div class="slider__data__info hijo_video">
-                                <div class="slider__cont__title">
-                                    <h2>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h2>
-                                </div>
-                                <div class="slider__cont__data">
-    
+                                <div id="slider_img_4" class="slider__cont">
+                                    <div class="slider__data__info hijo_video">
+                                        <div class="slider__cont__title">
+                                            <h2>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h2>
+                                        </div>
+                                        <div class="slider__cont__data">
+            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Servicios DATA -->
-                <div class="servicios__data">
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/gps.jpg" alt="GPS">
-                        <h3>Colocación de GPS.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/internet.jpg" alt="Internet">
-                        <h3>Instalación de internet en el vehículo .</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/alarma.jpg" alt="Alarma">
-                        <h3>Colocación de alarmas.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/ia.jpg" alt="IA">
-                        <h3>Colocación de (i.A) inteligencia artificial dentro del vehículo.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/cierre.jpg" alt="">
-                        <h3>Instalación y reparación de sistema de cierre centralizado</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/Polarisado.jpg" alt="Polarizado">
-                        <h3>Polarizado de vidrios</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/apagadoYencendido.jpg" alt="Apagado y Encendido de Vehiculo.">
-                        <h3>Colocación de botón de arranque y apagado de vehículo.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/video.jpg" alt="Video en Vehiculo">
-                        <h3>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/luz.jpg" alt="Luces">
-                        <h3>Instalación de sistema de luces de decoración dentro y fuera del vehículo.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/AjusteLuz.jpg" alt="Polarizado">
-                        <h3>Revisión, mantenimiento y alineación de faros.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/refri.jpg" alt="Refrigeracion para vehiculos y caminones">
-                        <h3>Instalación de equipos de refrigeración para camiones y autos pequeños.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/voltaje.jpg" alt="Polarizado">
-                        <h3>Instalación de tomada 220v - 50/60.HZ.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/camarasYsensores.jpg" alt="Polarizado">
-                        <h3>Instalación de camaras de retroceso y laterales con respectivos censores de proximidad.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/reviVoltaje.jpg" alt="Polarizado">
-                        <h3>Revisión y mantenimiento a sistema eléctrico, cambio de censores y electrónica en general</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/inyeccion.jpg" alt="Polarizado">
-                        <h3>Instalación de sistema de inyección de Hidrógeno.</h3>
-                    </div>
-                    <div class="servicios__data--cont">
-                        <img src="media/img/Seccion_Servicios/PC.jpg" alt="Polarizado">
-                        <h3>Instalación de computadora dentro de su vehículo asistencia y mantenimiento de software.</h3>
-                    </div>
-
             </div>
         </section>
         <div id="id_servicios__final" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(9, 85, 151);"></path></svg></div>
+        <!-- Contacto -->
+        <section class="section__contacto">
+            <h2 style="color: #fff; padding: 42px 20px;">Seccion Contacto Pendiente...</h2>
+        </section>
+        <!-- Blog -->
+        <section class="section__blog">
+            <h2 style="color: #fff; padding: 42px 20px;">Seccion Blog Pendiente...</h2>
+        </section>
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; Copright Derechos Recervados: Soluciones *2025*</p>
+            <p>&copy; Copyright: Todos los derechos recervados Soluciones *2025*</p>
         </footer>
     </div>
     <!-- Codigo JavaScript -->
     <script src="js/menu.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/slider_index.js"></script>
 </body>
 </html>
