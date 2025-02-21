@@ -68,8 +68,9 @@ h1 { font-size: 3rem; user-select: none;}
 
 .header__container {
     padding: 10px;
-
+    background-color: rgb(46, 113, 172);
     background-image: linear-gradient(rgb(39, 56, 105), rgba(56, 102, 167, 0.466)),url(../media/img/movile/header/header.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
