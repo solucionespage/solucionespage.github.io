@@ -129,6 +129,7 @@ h1 { font-size: 3rem; user-select: none;}
 .label_menu_desplegable > img {
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 
 .header__boton_menu {

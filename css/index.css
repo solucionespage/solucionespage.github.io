@@ -12,6 +12,12 @@
     z-index: -1;
 }
 
+@media screen and (min-width: 900px) {
+    .imagen_de_fondo {
+        background-image: linear-gradient(#1c244667, #000000d5),url(../media/img/desk/fondo_h.jpg);
+    }
+}
+
 /* Whatsapp */
 
 .cont__whatsapp {
