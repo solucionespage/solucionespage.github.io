@@ -10,7 +10,7 @@
 .slider__warp {
     position: relative;
     width: 100%;
-    box-shadow: 0 0 32px 0 #000000;
+    box-shadow: 0 0 10px 0 #000000;
     overflow: hidden;
     border-radius: 10px;
 
@@ -54,19 +54,19 @@
 /* Imagenes del Slider Cambiar segun sea nesesario por clase. */
 
 .hijo_gps {
-    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/gps.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000044),url(../media/img/slider/gps.jpg);
 }
 
 .hijo_polarizado {
-    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/Polarisado.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000044),url(../media/img/slider/Polarisado.jpg);
 }
 
 .hijo_calefaccion {
-    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/calefaccion.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000044),url(../media/img/slider/calefaccion.jpg);
 }
 
 .hijo_video {
-    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/video.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000044),url(../media/img/slider/video.jpg);
 }
 
 @media screen and (min-width: 700px) {
