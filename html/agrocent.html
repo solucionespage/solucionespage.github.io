@@ -42,7 +42,7 @@
                         </ul>
                     </nav>
                     <div class="header_foot">
-                        <p>&copy; Copright Derechos Recervados: Soluciones *2025*</p>
+                        <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
                     </div>
                 </div>
                 <div onclick="boton_menu()" class="header__desplegable__cerrar"></div>
@@ -50,7 +50,7 @@
             <div class="header__container">
                 <!-- Logo -->
                 <div class="header__logo">
-                    <img src="../media/img/logo.jpg" alt="Logo de Soluciones">
+                    <img id="logo_header" src="../media/img/logo.jpg" alt="Logo de Soluciones">
                 </div>
                 <!-- Nav -->
                 <nav class="header__nav">
@@ -85,51 +85,161 @@
                 </div>
                 <!-- Servicios DATA -->
                 <div class="servicios__data">
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/corte.jpg" alt="Corte y Plegado de Metales.">
+                    <div onclick="abrir_data('info1')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/corte.jpg" alt="Corte y Plegado de Metales.">
                         <h3>Corte y Plegado de Metales.</h3>
+                        <div onclick="cerrar_data(event, 'info1')" class="servicios_data_info info1">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/corte.jpg" alt="Corte y Plegado de Metales.">
+                                <h3>Corte y Plegado de Metales.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Corte por plasma, láser o agua: Permite cortar láminas de acero, aluminio, cobre y otros metales con alta precisión.<br><br>
+                                        - Cizallado: Para cortes rectos en láminas de distintos grosores.<br><br>
+                                        - Plegado y doblado: Se usa para dar forma a planchas metálicas y fabricar piezas estructurales.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/soldadura.jpg" alt="Soldadura y Ensable">
+                    <div onclick="abrir_data('info2')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/soldadura.jpg" alt="Soldadura y Ensable">
                         <h3>Soldadura y Ensable.</h3>
+                        <div onclick="cerrar_data(event, 'info2')" class="servicios_data_info info2">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/soldadura.jpg" alt="Soldadura y Ensable">
+                                <h3>Soldadura y Ensable.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Soldadura MIG/MAG y TIG: Métodos de soldadura para unir piezas de acero, aluminio e inoxidable con alta resistencia.<br><br>
+                                        - Soldadura por arco eléctrico: Utilizada en estructuras pesadas y grandes construcciones metálicas.<br><br>
+                                        - Soldadura de reparación: Arreglo de piezas dañadas o desgastadas, como maquinaria industrial o automotriz.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/prenza.jpg" alt="Mecanizado y Tornería.</">
+                    <div onclick="abrir_data('info3')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/prenza.jpg" alt="Mecanizado y Tornería.</">
                         <h3>Mecanizado y Tornería.</h3>
+                        <div onclick="cerrar_data(event, 'info3')" class="servicios_data_info info3">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/prenza.jpg" alt="Mecanizado y Tornería.</">
+                                <h3>Mecanizado y Tornería.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Torneado: Para fabricar piezas cilíndricas, como ejes, rodamientos y engranajes.<br><br>
+                                        - Fresado: Creación de piezas con formas más complejas mediante el uso de fresadoras.<br><br>
+                                        - Rectificado: Proceso para mejorar la precisión y el acabado superficial de las piezas.<br><br>
+                                        - Perforado y roscado: Creación de agujeros y roscas en piezas metálicas para ensamblaje.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/tubos.jpg" alt="Fabricación de Estructuras Metálicas.">
+                    <div onclick="abrir_data('info4')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/tubos.jpg" alt="Fabricación de Estructuras Metálicas.">
                         <h3>Fabricación de Estructuras Metálicas.</h3>
+                        <div onclick="cerrar_data(event, 'info4')" class="servicios_data_info info4">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/tubos.jpg" alt="Fabricación de Estructuras Metálicas.">
+                                <h3>Fabricación de Estructuras Metálicas.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Naves industriales y galpones: Construcción de estructuras para uso comercial o industrial.<br><br>
+                                        - Marcos, soportes y bases metálicas: Piezas esenciales para la instalación de maquinarias.<br><br>
+                                        - Escaleras, barandas y pasamanos: Estructuras de seguridad para edificios y fábricas.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/carpinteria.jpg" alt="Carpintería Metálica y Herrería.">
+                    <div onclick="abrir_data('info5')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/carpinteria.jpg" alt="Carpintería Metálica y Herrería.">
                         <h3>Carpintería Metálica y Herrería.</h3>
+                        <div onclick="cerrar_data(event, 'info5')" class="servicios_data_info info5">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/carpinteria.jpg" alt="Carpintería Metálica y Herrería.">
+                                <h3>Carpintería Metálica y Herrería.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Puertas y portones: Fabricación e instalación de portones corredizos, batientes y automáticos.<br><br>
+                                        - Rejas y cerramientos: Para protección y delimitación de espacios.<br><br>
+                                        - Muebles metálicos: Como estanterías, mesas de trabajo y estructuras decorativas.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/industrial.jpg" alt="Mantenimiento y Reparación Industrial.">
+                    <div onclick="abrir_data('info6')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/industrial.jpg" alt="Mantenimiento y Reparación Industrial.">
                         <h3>Mantenimiento y Reparación Industrial.</h3>
+                        <div onclick="cerrar_data(event, 'info6')" class="servicios_data_info info6">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/industrial.jpg" alt="Mantenimiento y Reparación Industrial.">
+                                <h3>Mantenimiento y Reparación Industrial.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Reparación de maquinaria: Diagnóstico y arreglo de equipos industriales dañados.<br><br>
+                                        - Mantenimiento preventivo: Inspección y ajustes periódicos para evitar fallos en las máquinas.<br><br>
+                                        - Refacciones y repuestos metálicos: Fabricación de piezas de repuesto a medida.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/acabado.jpg" alt="Tratamiento de Superficies y Acabados.">
+                    <div onclick="abrir_data('info7')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/acabado.jpg" alt="Tratamiento de Superficies y Acabados.">
                         <h3>Tratamiento de Superficies y Acabados.</h3>
+                        <div onclick="cerrar_data(event, 'info7')" class="servicios_data_info info7">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/acabado.jpg" alt="Tratamiento de Superficies y Acabados.">
+                                <h3>Tratamiento de Superficies y Acabados.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Pintura electrostática (epoxi): Para proteger el metal contra la corrosión y mejorar su estética.<br><br>
+                                        - Galvanizado y recubrimientos anticorrosivos: Aumenta la durabilidad de las piezas expuestas al ambiente.<br><br>
+                                        - Pulido y abrillantado: Para mejorar la apariencia y acabado final de los productos.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/llaves.jpg" alt="Diseño y Prototipo de Piezas.">
+                    <div onclick="abrir_data('info8')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/llaves.jpg" alt="Diseño y Prototipo de Piezas.">
                         <h3>Diseño y Prototipo de Piezas.</h3>
+                        <div onclick="cerrar_data(event, 'info8')" class="servicios_data_info info8">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/llaves.jpg" alt="Diseño y Prototipo de Piezas.">
+                                <h3>Diseño y Prototipo de Piezas.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Dibujo técnico e ingeniería: Creación de planos y modelos en software CAD para la fabricación de piezas.<br><br>
+                                        - Prototipado rápido: Desarrollo de piezas personalizadas para pruebas antes de la producción en serie.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Agrocent/plan.jpg" alt="Instalaciones Especializadas.">
+                    <div onclick="abrir_data('info9')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/plan.jpg" alt="Instalaciones Especializadas.">
                         <h3>Instalaciones Especializadas.</h3>
+                        <div onclick="cerrar_data(event, 'info9')" class="servicios_data_info info9">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Agrocent/plan.jpg" alt="Instalaciones Especializadas.">
+                                <h3>Instalaciones Especializadas.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>- Montaje de estructuras metálicas: Ensamblaje de vigas, columnas y plataformas en obra.<br><br>
+                                        - Tuberías y canalizaciones metálicas: Instalación de sistemas de transporte de fluidos y gases industriales.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>   
         </main>
-        <div id="id_servicios" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(66, 66, 66);"></path></svg></div>
+        <div class="cont__smooth">
+            <div id="id_servicios_back" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(97, 97, 97);"></path></svg></div>
+            <div id="id_servicios" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(66, 66, 66);"></path></svg></div>
+        </div>
         <!-- Seccion de Servicios -->
         <section id="id_seccion_servicios" class="section__servicios">
             <div class="servicios__container">
                 <div class="servicios__title">
-                    <h2>Descubra Más+</h2>
+                    <h2>Descubre Más+</h2>
                 </div>
                 <div class="servicios__secciones">
                     <div class="cont_secciones_servicios2 servicios__soluciones">
@@ -143,7 +253,7 @@
                         </div>
                     </div>
                     <div class="cont_secciones_servicios2 servicios__agrocent">
-                        <div class="serv_outline"></div>
+                        <div class="serv_outline"><a href="#"></a></div>
                         <div class="serv_logos serv__agrocent__logo">
                             <img src="../media/img/movile/servicios/agrocent.jpg" alt="Logo Seccion Agrocent">
                         </div>
@@ -167,10 +277,11 @@
         </main>       
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; Copyright: Todos los derechos recervados Soluciones *2025*</p>
+            <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
         </footer>
     </div>
     <!-- Codigo JavaScript -->
     <script src="../js/menu.js"></script>
+    <script src="../js/cerrar_data.js"></script>
 </body>
 </html>

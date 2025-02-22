@@ -12,12 +12,12 @@ html {
 }
 
 @font-face {
-    font-family: 'ubuntu';
+    font-family: 'ubuntu-bold';
     src: url(tipografia/Ubuntu-Bold.ttf);
 }
 
 body {
-    font-family: ubuntu, sans-serif;
+    font-family: ubuntu-bold, sans-serif;
     font-size: 16px;
 }
 
@@ -193,7 +193,7 @@ h1 { font-size: 3rem; user-select: none;}
 .header__item__des > a{
     color: #fff;
     font-size: 1.4rem;
-    background-color: #00091396;
+    background-color: #000000ce;
     padding: 5px 16px;
     text-transform: uppercase;
     border-radius: 12px;
@@ -223,6 +223,10 @@ h1 { font-size: 3rem; user-select: none;}
 }
 
 @media screen and (min-width: 750px) {
+    .label_menu_desplegable {
+        display: none;
+    }
+
     .header__container {
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
@@ -235,5 +239,98 @@ h1 { font-size: 3rem; user-select: none;}
 
     .header__item_g_o {
         display: none;
+    }
+
+    .header__item > a{
+        font-size: 1.4rem;
+    }
+}
+
+.servicios__data--cont--img {
+    min-width: 80px;
+    max-width: 80px;
+
+    height: 80px;
+    border-radius: 12px;
+}
+
+/* DATA */
+.servicios_data_info {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios_data_info__cont {
+    background: linear-gradient(to right, #010831, #084f92);
+    border-radius: 24px;
+    padding: 40px 20px;
+    position: relative;
+    width: 85%;
+    max-width: 800px;
+    display: grid;
+    gap: 40px 10px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.servicios_data_info__cont > h3 {
+    font-size: 1.4rem;
+}
+.servicios_data_info__cont__p{
+    font-size: 1.1rem;
+    grid-column: span 2;
+}
+
+
+.servicios_data_info-back {
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+    right: -18px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 112, 190);
+    border-radius: 24px;
+}
+
+/* Enlazado entre servicos 3 / 3 */
+.serv_outline a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ;
+}
+
+.serv_outline a:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+@media screen and (min-width: 950px) {
+    .servicios__data--cont--img {
+        min-width: 90px;
+        max-width: 90px;
+    
+        height: 90px;
+        border-radius: 12px;
+    }
+
+    .servicios_data_info__cont > h3 {
+        font-size: 1.7rem;
+    }
+    .servicios_data_info__cont__p{
+        font-size: 1.3rem;
+        grid-column: span 2;
     }
 }

@@ -40,7 +40,7 @@
                         </ul>
                     </nav>
                     <div class="header_foot">
-                        <p>&copy; Copright Derechos Recervados: Soluciones *2025*</p>
+                        <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
                     </div>
                 </div>
                 <div onclick="boton_menu()" class="header__desplegable__cerrar"></div>
@@ -48,7 +48,7 @@
             <div class="header__container">
                 <!-- Logo -->
                 <div class="header__logo">
-                    <img src="../media/img/logo.jpg" alt="Logo de Soluciones">
+                    <img id="logo_header" src="../media/img/logo.jpg" alt="Logo de Soluciones">
                 </div>
                 <!-- Nav -->
                 <nav class="header__nav">
@@ -78,84 +78,261 @@
                         <h1>Electrónica</h1>
                     </div>
                     <div class="main__info">
-                        <p>Todos Nuestros Servicios Profecionales a su Completa <span style="color: rgb(3, 3, 109);">Disposición</span>.</p>
+                        <p>Todos Nuestros Servicios Profecionales a su Completa <span style="color: rgb(0, 23, 128);">Disposición</span>.</p>
                     </div>
                 </div>
                 <!-- Servicios DATA -->
                 <div class="servicios__data">
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/gps.jpg" alt="GPS">
+                    <div onclick="abrir_data('info1')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/gps.jpg" alt="GPS">
                         <h3>Colocación de GPS.</h3>
+                        <div onclick="cerrar_data(event, 'info1')" class="servicios_data_info info1">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img"src="../media/img/Seccion_Servicios/gps.jpg" alt="GPS">
+                                <h3>Colocación de GPS.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Permite a los propietarios rastrear su vehículo en tiempo real, mejorar la seguridad y gestionar flotas de manera eficiente. Es útil para evitar robos y para el monitoreo de rutas en vehículos comerciales.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/internet.jpg" alt="Internet">
-                        <h3>Instalación de internet en el vehículo .</h3>
+                    <div onclick="abrir_data('info2')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/internet.jpg" alt="Internet">
+                        <h3>Instalación de internet en el vehículo.</h3>
+                        <div onclick="cerrar_data(event, 'info2')" class="servicios_data_info info2">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/internet.jpg" alt="Internet">
+                                <h3>Instalación de internet en el vehículo.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Brinda conectividad a los pasajeros, permitiendo el uso de navegación GPS, streaming, reuniones en línea y acceso a plataformas digitales sin depender del plan de datos móviles del teléfono.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/alarma.jpg" alt="Alarma">
+                    <div onclick="abrir_data('info3')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/alarma.jpg" alt="Alarma">
                         <h3>Colocación de alarmas.</h3>
+                        <div onclick="cerrar_data(event, 'info3')" class="servicios_data_info info3">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/alarma.jpg" alt="Alarma">
+                                <h3>Colocación de alarmas.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Incrementa la seguridad del vehículo, disuade robos y protege tanto a los ocupantes como los objetos de valor en el interior del auto.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/ia.jpg" alt="IA">
-                        <h3>Colocación de (i.A) inteligencia artificial dentro del vehículo.</h3>
+                    <div onclick="abrir_data('info4')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/ia.jpg" alt="IA">
+                        <h3>Colocación de Inteligencia Artificial dentro del vehículo.</h3>
+                        <div onclick="cerrar_data(event, 'info4')" class="servicios_data_info info4">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/ia.jpg" alt="IA">
+                                <h3>Colocación de Inteligencia Artificial dentro del vehículo.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Permite la automatización de funciones como reconocimiento de voz, asistencia en la conducción y monitoreo de fatiga del conductor. Mejora la experiencia de manejo y aumenta la seguridad.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/cierre.jpg" alt="">
-                        <h3>Instalación y reparación de sistema de cierre centralizado</h3>
+                    <div onclick="abrir_data('info5')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/cierre.jpg" alt="">
+                        <h3>Instalación y reparación de sistema de cierre centralizado.</h3>
+                        <div onclick="cerrar_data(event, 'info5')" class="servicios_data_info info5">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/cierre.jpg" alt="">
+                                <h3>Instalación y reparación de sistema de cierre centralizado.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Facilita la apertura y cierre de puertas con un solo botón, incrementando la comodidad y seguridad del usuario. También previene robos y fallos en el sistema mecánico de cerraduras.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/Polarisado.jpg" alt="Polarizado">
-                        <h3>Polarizado de vidrios</h3>
+                    <div onclick="abrir_data('info6')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/Polarisado.jpg" alt="Polarizado">
+                        <h3>Polarizado de vidrios.</h3>
+                        <div onclick="cerrar_data(event, 'info6')" class="servicios_data_info info6">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/Polarisado.jpg" alt="Polarizado">
+                                <h3>Polarizado de vidrios.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Mejora la estética del vehículo, reduce la temperatura interior, protege contra los rayos UV y aumenta la privacidad y seguridad al dificultar la visibilidad desde el exterior.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/apagadoYencendido.jpg" alt="Apagado y Encendido de Vehiculo.">
+                    <div onclick="abrir_data('info7')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/apagadoYencendido.jpg" alt="Apagado y Encendido de Vehiculo.">
                         <h3>Colocación de botón de arranque y apagado de vehículo.</h3>
+                        <div onclick="cerrar_data(event, 'info7')" class="servicios_data_info info7">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/apagadoYencendido.jpg" alt="Apagado y Encendido de Vehiculo.">
+                                <h3>Colocación de botón de arranque y apagado de vehículo.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Moderniza el sistema de encendido, eliminando la necesidad de una llave física. Aumenta la seguridad al incluir sistemas de autenticación como huella dactilar o tarjeta RFID.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/video.jpg" alt="Video en Vehiculo">
+                    <div onclick="abrir_data('info8')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/video.jpg" alt="Video en Vehiculo">
                         <h3>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h3>
+                        <div onclick="cerrar_data(event, 'info8')" class="servicios_data_info info8">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/video.jpg" alt="Video en Vehiculo">
+                                <h3>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Ofrece entretenimiento para los pasajeros y en el caso de vehículos comerciales, sirve para publicidad o presentaciones audiovisuales en eventos.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/luz.jpg" alt="Luces">
+                    <div onclick="abrir_data('info9')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/luz.jpg" alt="Luces">
                         <h3>Instalación de sistema de luces de decoración dentro y fuera del vehículo.</h3>
+                        <div onclick="cerrar_data(event, 'info9')" class="servicios_data_info info9">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/luz.jpg" alt="Luces">
+                                <h3>Instalación de sistema de luces de decoración dentro y fuera del vehículo.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Mejora la estética del auto y proporciona iluminación ambiental personalizable. También puede aumentar la visibilidad en carretera.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/AjusteLuz.jpg" alt="Polarizado">
+                    <div onclick="abrir_data('info10')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/AjusteLuz.jpg" alt="Polarizado">
                         <h3>Revisión, mantenimiento y alineación de faros.</h3>
+                        <div onclick="cerrar_data(event, 'info10')" class="servicios_data_info info10">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/AjusteLuz.jpg" alt="Polarizado">
+                                <h3>Revisión, mantenimiento y alineación de faros.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Garantiza una correcta iluminación de la vía, evita deslumbramientos a otros conductores y mejora la seguridad nocturna.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/refri.jpg" alt="Refrigeracion para vehiculos y caminones">
+                    <div onclick="abrir_data('info11')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/refri.jpg" alt="Refrigeracion para vehiculos y caminones">
                         <h3>Instalación de equipos de refrigeración para camiones y autos pequeños.</h3>
+                        <div onclick="cerrar_data(event, 'info11')" class="servicios_data_info info11">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/refri.jpg" alt="Refrigeracion para vehiculos y caminones">
+                                <h3>Instalación de equipos de refrigeración para camiones y autos pequeños.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Permite transportar mercancía perecedera sin perder la cadena de frío, además de ofrecer confort térmico en vehículos particulares.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/voltaje.jpg" alt="Polarizado">
+                    <div onclick="abrir_data('info12')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/voltaje.jpg" alt="Polarizado">
                         <h3>Instalación de tomada 220v - 50/60.HZ.</h3>
+                        <div onclick="cerrar_data(event, 'info12')" class="servicios_data_info info12">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/voltaje.jpg" alt="Polarizado">
+                                <h3>Instalación de tomada 220v - 50/60.HZ.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Permite el uso de electrodomésticos y herramientas dentro del vehículo, ideal para personas que trabajan en la carretera o que necesitan cargar dispositivos electrónicos.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/camarasYsensores.jpg" alt="Polarizado">
+                    <div onclick="abrir_data('info13')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/camarasYsensores.jpg" alt="Polarizado">
                         <h3>Instalación de camaras de retroceso y laterales con respectivos censores de proximidad.</h3>
+                        <div onclick="cerrar_data(event, 'info13')" class="servicios_data_info info13">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/camarasYsensores.jpg" alt="Polarizado">
+                                <h3>Instalación de camaras de retroceso y laterales con respectivos censores de proximidad.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Mejora la visibilidad y seguridad al estacionar o maniobrar en espacios reducidos, reduciendo el riesgo de accidentes.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/reviVoltaje.jpg" alt="Polarizado">
-                        <h3>Revisión y mantenimiento a sistema eléctrico, cambio de censores y electrónica en general</h3>
+                    <div onclick="abrir_data('info14')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/reviVoltaje.jpg" alt="Polarizado">
+                        <h3>Revisión y mantenimiento a sistema eléctrico, cambio de censores y electrónica en general.</h3>
+                        <div onclick="cerrar_data(event, 'info14')" class="servicios_data_info info14">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/reviVoltaje.jpg" alt="Polarizado">
+                                <h3>Revisión y mantenimiento a sistema eléctrico, cambio de censores y electrónica en general.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Asegura el buen funcionamiento del vehículo, previniendo fallas eléctricas que pueden afectar la seguridad y el desempeño del auto.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/inyeccion.jpg" alt="Polarizado">
+                    <div onclick="abrir_data('info15')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/inyeccion.jpg" alt="Polarizado">
                         <h3>Instalación de sistema de inyección de Hidrógeno.</h3>
+                        <div onclick="cerrar_data(event, 'info15')" class="servicios_data_info info15">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/inyeccion.jpg" alt="Polarizado">
+                                <h3>Instalación de sistema de inyección de Hidrógeno.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Mejora la eficiencia del motor, reduce el consumo de combustible y disminuye la contaminación ambiental, alineándose con la transición hacia energías más limpias.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="servicios__data--cont">
-                        <img src="../media/img/Seccion_Servicios/PC.jpg" alt="Polarizado">
+                    <div onclick="abrir_data('info16')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/PC.jpg" alt="Polarizado">
                         <h3>Instalación de computadora dentro de su vehículo asistencia y mantenimiento de software.</h3>
+                        <div onclick="cerrar_data(event, 'info16')" class="servicios_data_info info16">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/PC.jpg" alt="Polarizado">
+                                <h3>Instalación de computadora dentro de su vehículo asistencia y mantenimiento de software.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Convierte el vehículo en una oficina móvil, ideal para quienes trabajan en movimiento. También permite monitorear el desempeño del auto en tiempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="abrir_data('info17')" class="servicios__data--cont">
+                        <img class="servicios__data--cont--img" src="../media/img/Seccion_Servicios/calefaccion.jpg" alt="Polarizado">
+                        <h3>Colocación de calefacción para los asientos.</h3>
+                        <div onclick="cerrar_data(event, 'info17')" class="servicios_data_info info17">
+                            <div class="servicios_data_info__cont">
+                                <div class="servicios_data_info-back"></div>
+                                <img class="servicios__data--cont--img"src="../media/img/Seccion_Servicios/calefaccion.jpg" alt="GPS">
+                                <h3>Colocación de calefacción para los asientos.</h3>
+                                <div class="servicios_data_info__cont__p">
+                                    <p>Aumenta el confort del conductor y los pasajeros en climas fríos, proporcionando una experiencia de manejo más agradable.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>    
+        <div class="cont__smooth">
+            <div id="id_servicios_back" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(39, 116, 184);"></path></svg></div>
+            <div id="id_servicios" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(9, 85, 151);"></path></svg></div>
+        </div>
         <!-- Seccion de Servicios -->
-        <div id="id_servicios" class="smooth_class" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.59,96.22 C179.82,175.17 254.61,74.52 513.44,101.16 L508.39,165.30 L0.00,150.00 Z" style="stroke: none; fill: rgb(9, 85, 151);"></path></svg></div>
         <section id="id_seccion_servicios" class="section__servicios">
             <div class="servicios__container">
                 <div class="servicios__title">
-                    <h2>Descubra Más+</h2>
+                    <h2>Descubre Más+</h2>
                 </div>
                 <div class="servicios__secciones">
                     <div class="cont_secciones_servicios2 servicios__soluciones">
@@ -193,10 +370,11 @@
         </main>       
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; Copyright: Todos los derechos recervados Soluciones *2025*</p>
+            <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
         </footer>
     </div>
     <!-- Codigo JavaScript -->
     <script src="../js/menu.js"></script>
+    <script src="../js/cerrar_data.js"></script>
 </body>
 </html>

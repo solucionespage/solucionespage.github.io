@@ -23,11 +23,11 @@
 .cont__whatsapp {
     display: none;
     justify-content: end;
-    width: 100%;
+    width: fit-content;
     position: fixed;
-    z-index: 90;
+    z-index: 1010;
     top: 85vh;
-    left: -10px;
+    right: 10px;
     overflow: hidden;
 }
 
@@ -103,19 +103,43 @@
 
 .hero__boton > a:hover{
     color: #b8b8b8;
+    border: 2px solid #b8b8b8;
 }
 
 /* --- Smoot */
 
+.cont__smooth {
+    width: 100%;
+    position: relative;
+}
+
 #id_servicios {
     background-color: rgba(1, 2, 39, 0.171);
+    position: relative;
+    z-index: 1;
+}
+
+#id_servicios_back {
+position: absolute;
+width: 100%;
+top: -10px;
 }
 
 #id_servicios__final {
     position: relative;
     transform: scale(-1);
     direction: rtl;
+    z-index: 1;
+}
+
+#id_servicios__final_back {
+    position: absolute;
+    width: 100%;
+
+    transform: scale(-1);
+    direction: rtl;
     backdrop-filter: blur(3px);
+    top: 10px;
 }
 
 /* --- Servicios --- */
@@ -125,14 +149,12 @@
     text-align: center;
     font-size: 1.3rem;
     padding: 0 0 12px;
-
 }
 
 .servicios__container {
     width: 100%;
     color: #fff;
-    background: linear-gradient(rgb(9, 85, 151), rgb(46, 113, 172));
-
+    background-color: rgb(9, 85, 151);
     display: flex;
     flex-direction: column;
 }
@@ -146,7 +168,6 @@
     flex-direction: column;
 }
 
-
 .cont_secciones_servicios2 {
     display: flex;
     gap: 10px;
@@ -159,14 +180,6 @@
 }
 
 .serv_outline {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.serv_outline a{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -202,6 +215,11 @@
 }
 
 @media screen and (min-width: 950px) {
+
+    .hero__container {
+        padding: 32px;
+    }
+
     .servicios__secciones {
         gap: 10px;
         flex-direction: row;
@@ -221,6 +239,14 @@
     .serv__soluciones__title, .serv__agrocent__title, .serv__digital__title {
         flex: 2;
         font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+    }
+
+    .hero__slogan > h2{
+        font-size: 1.3rem;
     }
 }
 

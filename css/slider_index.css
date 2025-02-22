@@ -10,7 +10,10 @@
 .slider__warp {
     position: relative;
     width: 100%;
+    box-shadow: 0 0 32px 0 #000000;
     overflow: hidden;
+    border-radius: 10px;
+
 }
 
 .slider__data {
@@ -26,7 +29,6 @@
 .slider__cont {
     width: 100%;
     height: 300px;
-    padding: 20px 0;
     display: flex;
     justify-content: center;
 } 
@@ -43,7 +45,7 @@
 }
 
 .slider__cont__title {
-    padding: 10px;
+    padding: 20px;
     color: #fff;
 }
 
@@ -51,22 +53,20 @@
 
 /* Imagenes del Slider Cambiar segun sea nesesario por clase. */
 
-
-
 .hijo_gps {
-    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/gps.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/gps.jpg);
 }
 
 .hijo_polarizado {
-    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/Polarisado.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/Polarisado.jpg);
 }
 
 .hijo_calefaccion {
-    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/calefaccion.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/calefaccion.jpg);
 }
 
 .hijo_video {
-    background-image: linear-gradient(#00000073, #0000004d),url(../media/img/slider/video.jpg);
+    background-image: linear-gradient(to right, #000000c0, #00000073),url(../media/img/slider/video.jpg);
 }
 
 @media screen and (min-width: 700px) {
@@ -76,11 +76,16 @@
     }
 
     .slider__cont {
-        height: 350px;
+        height: 450px;
     } 
 
+    .slider__cont__title {
+        font-size: 1.3rem;
+    }
+
     .slider__title {
+        padding: 20px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
