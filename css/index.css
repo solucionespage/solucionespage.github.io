@@ -225,7 +225,7 @@ top: -10px;
 }
 
 .servicios__digital {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(22, 22, 22));
+    background: linear-gradient(to right, rgb(4, 46, 88), rgb(37, 119, 201));
 }
 
 @media screen and (min-width: 950px) {
