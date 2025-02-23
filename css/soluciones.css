@@ -88,6 +88,12 @@
     padding: 10px;
     border-radius: 12px;
     position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.servicios__data--cont:hover {
+    background-color: #55555554;
 }
 
 #id_servicios__final {
@@ -198,7 +204,7 @@ top: -10px;
 }
 
 .servicios__digital {
-    background: linear-gradient(to right, rgb(1, 32, 66), rgb(31, 130, 228));
+    background: linear-gradient(to right, rgb(2, 36, 71), rgb(30, 109, 189));
 }
 
 @media screen and (min-width: 950px) {
@@ -227,4 +233,7 @@ top: -10px;
         font-size: 1.2rem;
     }
 
+    .main__info {
+        font-size: 1.5rem;
+    }
 }

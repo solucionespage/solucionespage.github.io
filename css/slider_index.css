@@ -1,6 +1,22 @@
 
 .servicios__slider {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
     padding: 10px;
+    background-color: rgba(33, 115, 223, 0.938);
+    border-radius: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.servicios__slider_back {
+    padding: 20px;
+    margin: auto;
+    background-color: rgba(20, 96, 196, 0.938);
+    border-radius: 32px;
+    position: relative;
+    z-index: 1;
 }
 
 .slider__container {
@@ -11,8 +27,8 @@
     position: relative;
     width: 100%;
     box-shadow: 0 0 10px 0 #000000;
-    overflow: hidden;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 
@@ -21,6 +37,7 @@
     width: 400%;
     display: flex;
     transition: transform 0.3s ease-in-out;
+    
 }
 
 
@@ -69,6 +86,10 @@
     background-image: linear-gradient(to right, #000000c0, #00000044),url(../media/img/slider/video.jpg);
 }
 
+.slider__title {
+    padding: 10px 6px;
+}
+
 @media screen and (min-width: 700px) {
     .slider__warp {
         max-width: 1000px;
@@ -84,8 +105,24 @@
     }
 
     .slider__title {
-        padding: 20px;
+        margin-bottom: 14px;
         text-align: center;
         font-size: 1.3rem;
+    }
+
+    .hijo_gps {
+        background-image: linear-gradient(to right, #000000da, #00092569),url(../media/img/slider/gps.jpg);
+    }
+    
+    .hijo_polarizado {
+        background-image: linear-gradient(to right, #000000da, #00092569),url(../media/img/slider/Polarisado.jpg);
+    }
+    
+    .hijo_calefaccion {
+        background-image: linear-gradient(to right, #000000da, #00092569),url(../media/img/slider/calefaccion.jpg);
+    }
+    
+    .hijo_video {
+        background-image: linear-gradient(to right, #000000da, #00092569),url(../media/img/slider/video.jpg);
     }
 }

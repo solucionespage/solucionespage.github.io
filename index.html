@@ -33,7 +33,7 @@
                     </div>
                     <nav class="header__nav__des">
                         <ul class="header__list__des">
-                            <li class="header__item__des"><a onclick="boton_menu()" href="#">Inicio</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="index.html">Inicio</a></li>
                             <li class="header__item__des"><a onclick="boton_menu()" href="#id_seccion_servicios">Servicios</a></li>
                             <li class="header__item__des"><a onclick="boton_menu()" href="html/electronica.html">Electrónica</a></li>
                             <li class="header__item__des"><a onclick="boton_menu()" href="html/agrocent.html">Agrocenter</a></li>
@@ -56,7 +56,7 @@
                 <!-- Nav -->
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#">Inicio</a></li>
+                        <li class="header__item"><a href="index.html">Inicio</a></li>
                         <li class="header__item header__item_g_o"><a href="#id_seccion_servicios">Servicios</a></li>
                         <li class="header__item header__item_g"><a href="html/electronica.html">Electrónica</a></li>
                         <li class="header__item header__item_g"><a href="html/agrocent.html">Agrocenter</a></li>
@@ -67,7 +67,7 @@
                 </nav>
                 <!-- Boton Menu Desplegable -->
                 <div class="header__boton_menu">
-                    <label onclick="boton_menu()" class="label_menu_desplegable" for="menu_desplegable">
+                    <label onclick="abrir_menu()" class="label_menu_desplegable" for="menu_desplegable">
                         <img src="media/img/movile/header/menu-button_icon-icons.com_72989.svg" alt="Menu Desplegable">
                     </label>
                     <input type="checkbox" name="boton" id="menu_desplegable">
@@ -97,7 +97,9 @@
         <section id="id_seccion_servicios" class="section__servicios">
             <div class="servicios__container">
                 <div class="servicios__title">
-                    <h2>Nuestros Servicios</h2>
+                    <div class="servicios__title__cont">
+                        <h2>Nuestros Servicios</h2>
+                    </div>
                 </div>
                 <div class="servicios__secciones">
                     <div class="cont_secciones_servicios2 servicios__soluciones">
@@ -133,49 +135,51 @@
                 </div>
                 <!-- Slider -->
                 <div class="servicios__slider">
-                    <div class="slider__title">
-                        <h2>Nuevos Servicios a su <span style="color: rgb(0, 23, 128);">Disposición</span>.</h2>
-                    </div>
-                    <div class="slider__container">
-                        <div class="slider__warp">
-                            <div class="slider__data">
-                                <div id="slider_img_1" class="slider__cont">
-                                    <div class="slider__data__info hijo_gps">
-                                        <div class="slider__cont__title">
-                                            <h2>Colocación de GPS.</h2>
-                                        </div>
-                                        <div class="slider__cont__data">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="slider_img_2" class="slider__cont">
-                                    <div class="slider__data__info hijo_polarizado">
-                                        <div class="slider__cont__title">
-                                            <h2>Polarizado de Vidrios</h2>
-                                        </div>
-                                        <div class="slider__cont__data">
-            
+                    <div class="servicios__slider_back">
+                        <div class="slider__title">
+                            <h2>Nuevos Servicios a su <span style="color: rgb(9, 23, 87);">Disposición</span>.</h2>
+                        </div>
+                        <div class="slider__container">
+                            <div class="slider__warp">
+                                <div class="slider__data">
+                                    <div id="slider_img_1" class="slider__cont">
+                                        <div class="slider__data__info hijo_gps">
+                                            <div class="slider__cont__title">
+                                                <h2>Colocación de GPS.</h2>
+                                            </div>
+                                            <div class="slider__cont__data">
+                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="slider_img_3" class="slider__cont">
-                                    <div class="slider__data__info hijo_calefaccion">
-                                        <div class="slider__cont__title">
-                                            <h2>Colocación de calefación para los asientos.</h2>
-                                        </div>
-                                        <div class="slider__cont__data">
-            
+                                    <div id="slider_img_2" class="slider__cont">
+                                        <div class="slider__data__info hijo_polarizado">
+                                            <div class="slider__cont__title">
+                                                <h2>Polarizado de Vidrios</h2>
+                                            </div>
+                                            <div class="slider__cont__data">
+                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="slider_img_4" class="slider__cont">
-                                    <div class="slider__data__info hijo_video">
-                                        <div class="slider__cont__title">
-                                            <h2>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h2>
+                                    <div id="slider_img_3" class="slider__cont">
+                                        <div class="slider__data__info hijo_calefaccion">
+                                            <div class="slider__cont__title">
+                                                <h2>Colocación de calefación para los asientos.</h2>
+                                            </div>
+                                            <div class="slider__cont__data">
+                
+                                            </div>
                                         </div>
-                                        <div class="slider__cont__data">
-            
+                                    </div>
+                                    <div id="slider_img_4" class="slider__cont">
+                                        <div class="slider__data__info hijo_video">
+                                            <div class="slider__cont__title">
+                                                <h2>Colocación de equipos de audio y videos hasta 32 pulgadas dentro y fuera del vehículo.</h2>
+                                            </div>
+                                            <div class="slider__cont__data">
+                
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

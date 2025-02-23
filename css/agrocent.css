@@ -101,6 +101,12 @@
     background-color: rgba(134, 134, 134, 0.384);
     padding: 10px;
     border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.servicios__data--cont:hover {
+    background-color: rgba(175, 175, 175, 0.432);
 }
 
 .servicios__data--cont > img {
@@ -255,4 +261,7 @@ top: -10px;
         height: 90px;
     }
     
+    .main__info {
+        font-size: 1.5rem;
+    }
 }
