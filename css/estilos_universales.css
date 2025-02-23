@@ -257,7 +257,7 @@ h1 { font-size: 3rem; user-select: none;}
 /* DATA */
 .servicios_data_info {
     position: fixed;
-    z-index: 10;
+    z-index: 1300;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.507);

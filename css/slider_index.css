@@ -1,6 +1,6 @@
 
 .servicios__slider {
-    width: 85%;
+    width: 95%;
     margin: auto;
     margin-top: 20px;
     padding: 10px;
@@ -108,6 +108,10 @@
         margin-bottom: 14px;
         text-align: center;
         font-size: 1.3rem;
+    }
+
+    .servicios__slider {
+        width: 85%;
     }
 
     .hijo_gps {
