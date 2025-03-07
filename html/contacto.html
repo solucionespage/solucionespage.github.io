@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Soluciones, Marketig Digital">
+    <meta name="author" content="Manuel Del Rio Socorro">
+    <link rel="shortcut icon" href="../media/img/logo.jpg" type="image/x-icon">
+    <title>Digimark</title>
+    <link rel="stylesheet" href="../css/estilos_universales.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="contenedor__principal">
+        <!-- Imagen del fondo -->
+        <div class="imagen_de_fondo"></div>
+        <!-- Ventana de Whatsapp-->
+        <div id="boton__whatsapp" class="cont__whatsapp">
+            <a id="boton__ir_a_whatsapp" href="https://wa.me/+59892166630" target="_blank">
+                <button>Contactar via WhatsApp</button>
+                <img src="../media/img/whatsapp.png" alt="whatsapp">
+                <div class="whatsapp_click"></div>
+            </a>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__desplegable">
+                <div class="header__desplegable__container">
+                    <div class="header__logo__des">
+                        <img src="../media/img/movile/header/logo.jpg" alt="Logo de Soluciones SA">
+                    </div>
+                    <nav class="header__nav__des">
+                        <ul class="header__list__des">
+                            <li class="header__item__des"><a onclick="boton_menu()" href="../index.html">Inicio</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="#id_seccion_servicios">Servicios</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="electronica.html">Electrónica</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="agrocent.html">Agrocenter</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="digimark.html">Digimark</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="contacto.html">Contacto</a></li>
+                            <li class="header__item__des"><a onclick="boton_menu()" href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_foot">
+                        <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
+                    </div>
+                </div>
+                <div onclick="boton_menu()" class="header__desplegable__cerrar"></div>
+            </div>
+            <div class="header__container">
+                <!-- Logo -->
+                <div class="header__logo">
+                    <img id="logo_header" src="../media/img/logo.jpg" alt="Logo de Soluciones">
+                </div>
+                <!-- Nav -->
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="../index.html">Inicio</a></li>
+                        <li class="header__item header__item_g_o"><a href="../index.html">Servicios</a></li>
+                        <li class="header__item header__item_g"><a href="electronica.html">Electrónica</a></li>
+                        <li class="header__item header__item_g"><a href="agrocent.html">Agrocenter</a></li>
+                        <li class="header__item header__item_g"><a href="digimark.html">Digimark</a></li>
+                        <li class="header__item"><a href="contacto.html">Contacto</a></li>
+                        <li class="header__item"><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <!-- Boton Menu Desplegable -->
+                <div class="header__boton_menu">
+                    <label onclick="abrir_menu()" class="label_menu_desplegable" for="menu_desplegable">
+                        <img src="../media/img/movile/header/menu-button_icon-icons.com_72989.svg" alt="Menu Desplegable">
+                    </label>
+                    <input type="checkbox" name="boton" id="menu_desplegable">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="contact__title">
+                    <h2>Contacto</h2>
+                </div>
+                <section class="section__contact__info">
+                    <div class="contact__info contact__phone">
+                        <div class="contact__img phone__img">
+                            <img src="../media/img/contacto/phone.svg" alt="">
+                        </div>
+                        <p>+598 99 052 105</p>
+                    </div>
+                    <div class="contact__info contact__location">
+                        <div class="contact__img location__img">
+                            <img src="../media/img/contacto/location.svg" alt="">
+                        </div>
+                        <p>Brasil</p>
+                    </div>
+                    <div class="contact__info contact__address">
+                        <div class="contact__img address__img">
+                            <img src="../media/img/contacto/home.png" alt="">
+                        </div>
+                        <p>AV. Brasil 1071 Chuy Rocha</p>
+                    </div>
+                    <div class="contact__info contact__email">
+                        <div class="contact__img email__img">
+                            <img src="../media/img/contacto/email.svg" alt="">
+                        </div>
+                        <p>soluciones.inx@gmail.com</p>
+                    </div>
+                </section>
+                <div class="section__contact__redes">
+                    <div class="redes_element_cont redes__facebook">
+                        <a class="a_redes" href="#">
+                            <img src="../media/img/contacto/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="redes_element_cont redes__whatsapp">
+                        <a class="a_redes" href="#">
+                            <img src="../media/img/contacto/whatsapp.png" alt="Whatsapp">
+                        </a>
+                    </div>
+                    <div class="redes_element_cont redes__telegram">
+                        <a class="a_redes" href="#">
+                            <img src="../media/img/contacto/telegrama.png" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Imagenes Relacionadas con el proyecto: <br> <a rel="noopener noreferrer" style="color: #ead8ff;" target="_blank" href="https://www.freepik.es">www.freepik.es</a></p>
+            <p>&copy; Copyright: Derechos recervados Soluciones *2025*</p>
+        </footer>
+    </div>
+    <!-- Codigo JavaScript -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/cerrar_data.js"></script>
+</body>
+</html>
