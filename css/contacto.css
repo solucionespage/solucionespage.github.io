@@ -111,7 +111,7 @@ main {
 
 @media screen and (min-width: 800px) {
     .section__contact__info {
-        width: 80%;
+        width: 60%;
     }
 }
 

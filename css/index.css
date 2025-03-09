@@ -187,7 +187,7 @@ top: -10px;
     gap: 10px;
     align-items: center;
     height: 150px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -237,7 +237,7 @@ top: -10px;
     .servicios__secciones {
         gap: 10px;
         flex-direction: row;
-        max-width: 1300px;
+        max-width: 1400px;
         margin: auto;
     }
 
